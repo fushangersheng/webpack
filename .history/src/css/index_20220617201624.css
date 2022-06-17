@@ -1,0 +1,18 @@
+body {
+  background: url(../assets/assets/) no-repeat center;
+}
+body .tabs {
+  width: 400px;
+  height: 40px;
+  background-color: pink;
+}
+body .box {
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/logo_small.png);
+}
+body .box2 {
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/1.gif);
+}
