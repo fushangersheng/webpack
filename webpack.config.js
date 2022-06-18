@@ -3,6 +3,7 @@ const {join}=require("path")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const eslintWebpackPlugin = require('eslint-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     mode: 'development',
     entry: "./src/main.js",
@@ -18,7 +19,8 @@ module.exports = {
       new VueLoaderPlugin(),
       new eslintWebpackPlugin({
         context:join(__dirname, "./src")
-      })
+      }),
+      new MiniCssExtractPlugin()
     ],
       devServer: {
         port: 3000, 
@@ -77,6 +79,10 @@ module.exports = {
             'vue-style-loader',
             'css-loader'
           ]
+        },
+        {
+          test: /\.css$/i,
+          use: [MiniCssExtractPlugin.loader, "css-loader"],
         }
       ]
         
