@@ -2,7 +2,7 @@ const path = require("path")
 const {join}=require("path")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
-const eslintWebpackPlugin = require('eslint-webpack-plugin')
+const eslintWeb
 module.exports = {
     mode: 'development',
     entry: "./src/main.js",
@@ -15,10 +15,7 @@ module.exports = {
         template: './public/index.html',
         filename: 'index.html'
       }),
-      new VueLoaderPlugin(),
-      new eslintWebpackPlugin({
-        context:join(__dirname, "./src")
-      })
+      new VueLoaderPlugin()
     ],
       devServer: {
         port: 3000, 

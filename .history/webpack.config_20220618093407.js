@@ -16,8 +16,8 @@ module.exports = {
         filename: 'index.html'
       }),
       new VueLoaderPlugin(),
-      new eslintWebpackPlugin({
-        context:join(__dirname, "./src")
+      new HtmlWebpackPlugin({
+        
       })
     ],
       devServer: {

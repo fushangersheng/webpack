@@ -17,7 +17,7 @@ module.exports = {
       }),
       new VueLoaderPlugin(),
       new eslintWebpackPlugin({
-        context:join(__dirname, "./src")
+        context
       })
     ],
       devServer: {

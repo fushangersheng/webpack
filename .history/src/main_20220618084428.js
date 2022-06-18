@@ -10,12 +10,13 @@ theImg.src = imgUrl
 document.body.appendChild(theImg)
 import './assets/assets/fonts/iconfont.css'
 import './css/index.css'
-// class Apps {
-//     static a = 123
-//   }
-// console.log(Apps.a)
+class Apps {
+    static a = 123
+  }
+  
+console.log(Apps.a)
 import App from './app.vue'
-import Vue from './vue' // 引入vue.js对象
+import Vue from './' // 引入vue.js对象
 
 new Vue({ 
   render: h => h(App) // 渲染函数, 渲染App组件里的标签

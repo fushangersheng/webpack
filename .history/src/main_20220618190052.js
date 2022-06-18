@@ -14,7 +14,7 @@ import './css/index.css'
 //     static a = 123
 //   }
 // console.log(Apps.a)
-import App from './app.vue'
+import App from './app'
 import Vue from './vue' // 引入vue.js对象
 
 new Vue({ 

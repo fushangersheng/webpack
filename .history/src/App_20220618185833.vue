@@ -10,7 +10,7 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style scope>
 div {
   color: red;
 }

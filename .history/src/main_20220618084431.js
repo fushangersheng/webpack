@@ -10,10 +10,11 @@ theImg.src = imgUrl
 document.body.appendChild(theImg)
 import './assets/assets/fonts/iconfont.css'
 import './css/index.css'
-// class Apps {
-//     static a = 123
-//   }
-// console.log(Apps.a)
+class Apps {
+    static a = 123
+  }
+  
+console.log(Apps.a)
 import App from './app.vue'
 import Vue from './vue' // 引入vue.js对象
 
